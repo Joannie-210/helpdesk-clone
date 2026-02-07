@@ -4,14 +4,15 @@ import { CircleQuestionMark } from "lucide-react";
 import { Gift } from "lucide-react";
 import profileimg from "../../assets/profileimg.jpg";
 import cap from "../../assets/capacity.webp";
+
 import {Search} from "lucide-react";
 
 const TopLayout = () => {
   return (
-    <div className="w-full h-15 bg-[#13265c] text-white flex items-center justify-between px-[-30px]">
+    <div className="w-full h-15 bg-blue-900 text-white flex items-center justify-between">
       <div className="w-[98%] mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-4">
-              <img src={cap} alt="Capacity" className="w-8 h-8 rounded" />
+            <img src={cap} alt="Capacity" className="w-8 h-8 rounded" />   
         <h1 className="">Helpdesk</h1>    
         </div>
     <div className="flex justify-center relative w-[33%] ">
