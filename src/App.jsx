@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import  Activity from "./pages/Activity";
 import  Branches from "./pages/Branches";
 import  Database from "./pages/Database";
@@ -12,6 +13,7 @@ import  Support from "./pages/Support";
 import  Tickets from "./pages/Tickets";
 import  Users from "./pages/Users";
 import CreateTicket from "./pages/CreateTicket";
+import "./App.css";
 import "./index.css";
 import AppLayout from "./components/layouts/AppLayout";
 
@@ -20,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     
       <Routes>
          <Route path="/" element={<AppLayout />}>
+         <Route index element={<Home />} />
         <Route path="/activity" element={<Activity />} />
         <Route path="/branches" element={<Branches />} />
         <Route path="/database" element={<Database />} />

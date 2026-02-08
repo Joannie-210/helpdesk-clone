@@ -1,8 +1,8 @@
-
+// import MainContent from "../tickets/TicketDetail";
 const Activity = () => {
     return (
-        <div className="w-full h-full bg-gray-100 flex items-center justify-center">
-            <h1 className="text-2xl font-bold text-gray-800">Settings Page</h1>
+        <div className="w-100% h-full  bg-white  flex items-center justify-center">
+          {/* <MainContent/> */}
             </div>
     )
 }

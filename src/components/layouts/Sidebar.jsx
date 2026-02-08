@@ -35,7 +35,7 @@ const navItems = [
 
 export default function Sidebar() {
   return (
-    <aside className="bg-blue-900 w-12 h-full text-white flex flex-col items-center py-4 gap-2">
+    <aside className="bg-blue-900 w-12 h-full font-bold text-blue-400 flex flex-col items-center gap-4 py-2">
 
       {navItems.map(({ icon: Icon, path, label }) => (
         <NavLink
@@ -43,8 +43,8 @@ export default function Sidebar() {
           to={path}
           title={label}
           className={({ isActive }) =>
-            `p-2 rounded transition ${
-              isActive ? "bg-blue-700" : "hover:bg-blue-800"
+            `px-3 mt-[-3px]py-2 rounded transition ${
+              isActive ? "border-l-4 border-l-amber-400 text-amber-400" : "hover:text-blue-300"
             }`
           }
         >

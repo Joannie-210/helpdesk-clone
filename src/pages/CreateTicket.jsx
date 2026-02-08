@@ -2,9 +2,9 @@ import React from "react";
 
 const CreateTicket = () => {
     return (
-        <div className="mt-20 ml-20 bg-gray-100 flex items-center justify-center">
-            <h1 className="text-2xl font-bold text-gray-800">Tickets Page</h1>
-        </div>
+        <div className="w-full h-full bg-white  flex items-center justify-center">
+            <h1 className="text-2xl font-bold text-gray-800">Settings Page</h1>
+            </div>
     )
 }
 export default CreateTicket;
