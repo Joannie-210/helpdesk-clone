@@ -260,7 +260,7 @@ const TicketDetail = ({ ticket, expanded, onToggleExpand }) => {
   return (
     <section
       className={`
-        bg-white flex flex-col
+        bg-gray-50 flex flex-col
         border-r border-gray-200
         transition-all duration-300
         flex-1 min-w-0
@@ -320,7 +320,7 @@ const TicketDetail = ({ ticket, expanded, onToggleExpand }) => {
             <div className="flex justify-between mt-[-8px] gap-2 px-2 items-center py-2 border border-gray-200">
                 <div className="flex items-center gap-2">
                 <p>To:</p>
-                <div className="flex px-2 rounded-2xl bg-gray-100 items-center gap-2 mt-1">
+                <div className="flex px-2 rounded-2xl bg-white items-center gap-2 mt-1">
                     <img src={profileimg} alt="Profile" className="w-6 h-6 rounded-full" />
                     <span className="text-sm text-gray-900">Allison Westervelt awestervelt@gmail.com</span>
                     <X className="w-4 h-4 text-gray-400 ml-auto cursor-pointer" />
@@ -348,9 +348,9 @@ const TicketDetail = ({ ticket, expanded, onToggleExpand }) => {
           </div>
         </div>
 
-        <div className="p-8 space-y-6">
+        <div className="py-8 px-4 space-y-6">
           {[1, 2].map((msg) => (
-            <div key={msg} className="bg-gray-50 rounded-lg p-4">
+            <div key={msg} className="bg-white shadow w-full rounded-lg p-4">
               <div className="flex gap-3">
                 <img src={profileimg} alt="Profile" className="w-8 h-8 rounded-full object-cover" />
                 <div className="flex-1">
